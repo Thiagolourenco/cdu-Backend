@@ -1,9 +1,9 @@
-import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
 
-import routes from "./routes";
-import databaseConfig from "./config/database";
+import routes from './routes';
+import databaseConfig from './config/database';
 
 class Server {
   constructor() {
@@ -18,7 +18,7 @@ class Server {
     mongoose.connect(databaseConfig.uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
     });
   }
 
